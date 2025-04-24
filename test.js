@@ -42,4 +42,15 @@ test("One Dollar should be 142.535 Yen", function(){
 
 
 // Fourth Test - JPY => GBP (Yen to Pound)
-test("One Yen should be 0.0059 GBP")
+test("One Yen should be 0.0059 GBP", function(){
+    const {fromYenToPound} = require('./app.js');
+
+    //Use the function
+    const Pounds = fromYenToPound(1000);
+
+    //If one Yen is 0.005259 Gbp, then 1000 yen should be 1000 * 0.005259 = 5.259 Gbp
+    const expected = 1000 * 0.005259;
+    
+    // comparison for unit test.
+    expect(fromYenToPound(1000)).toBe(5.259); // 1 Jpy = 0.005259 Gbp.
+})
