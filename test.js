@@ -33,9 +33,13 @@ test("One Dollar should be 142.535 Yen", function(){
     // Use the function
     const dollars = fromDollarToYen(5);
 
-    // IF 1 dollar is 142.535 Yen, then 5 dollars should be 5 * 142.535 = 712.675
+    // IF One dollar is 142.535 Yen, then 5 dollars should be 5 * 142.535 = 712.675 Yen.
+    const expected = 5 * 142.535;
+
+    // Comparison for the unit test.
+    expect(fromDollarToYen(5)).toBe(712.675); // 1 dollar usd = 142.535 Jpy.
 })
 
 
 // Fourth Test - JPY => GBP (Yen to Pound)
-test("One Yen should be x Pounds")
+test("One Yen should be 0.0059 GBP")
