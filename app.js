@@ -12,6 +12,12 @@ const fromDollarToYen = function(valueInDollar){
     return valueInYen;
 }
 
+const fromYenToPounds = function(valueInYen){
+    //convert the given valueInYen to ValueInPound.
+    let valueInPound = valueInYen * 0.005259;
+    return valueInPound;
+}
+
 // This is my function that sums two numbers
 const sum = (a,b) => {
     return a + b
