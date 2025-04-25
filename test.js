@@ -52,5 +52,5 @@ test("One Yen should be 0.0059 GBP", function(){
     const expected = 5 * 0.005259; // 0.0265
     
     // comparison for unit test.
-    expect(fromYenToPound(5)).toBe(0.0265); // 1 Jpy = 0.005259 Gbp.
+    expect(fromYenToPound(5)).toBe(0.026295); // 1 Jpy = 0.005259 Gbp.
 })
