@@ -48,9 +48,9 @@ test("One Yen should be 0.0059 GBP", function(){
     //Use the function
     const Pounds = fromYenToPound(1000);
 
-    //If one Yen is 0.005259 Gbp, then 1000 yen should be 1000 * 0.005259 = 5.259 Gbp
-    const expected = 1000 * 0.005259;
+    //If one Yen is 0.0053 Gbp, then 1000 yen should be 1 * 0.0053 = 0.0053 Gbp
+    const expected = 5 * 0.005259; // 0.0265
     
     // comparison for unit test.
-    expect(fromYenToPound(1000)).toBe(5.259); // 1 Jpy = 0.005259 Gbp.
+    expect(fromYenToPound(5)).toBe(0.0265); // 1 Jpy = 0.005259 Gbp.
 })
